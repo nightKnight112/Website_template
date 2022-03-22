@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> College site </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .header-top{
+            height: 150px;
+            width:100%;
+            padding: auto;
+            margin-top: -10px;
+            margin-left: -2px;
+        }
+        .top-left{
+            height:50px;
+            width:60%;
+            float:left;
+        }
+        .top-right{
+            height:50px;
+            width:40%;
+            float:left;
+        }
+        .register-form{
+            height: 265px;
+            width: 50%;
+            margin-top: 40px;
+            margin-left: 380px;
+        }
+        * {box-sizing: border-box;}
+        /* Style the input container */
+        .input-container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+        }
+
+        /* Style the form icons */
+        .icon {
+        padding: 10px;
+        background: dodgerblue;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+        }
+
+        /* Style the input fields */
+        .input-field {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        }
+
+        .input-field:focus {
+        border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        }
+
+        .btn:hover {
+        opacity: 1;
+        }
+        .reg-button{
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9; 
+        float: left;
+        }
+        .bck-t-login {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            width: 40%;
+            cursor: pointer;
+            text-decoration:none;
+            opacity: 0.9;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body style="background: url(img/background_v_1.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+opacity: 0.8;">
+    <!--style="background: url(img/proxy_v.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover" --> 
+<div class="header-top" style="border: 5px solid black; background-color:palevioletred">
+        <div class="top-left">
+            <a href="site.html"><img src="img/clg_logo.png"  alt="College logo here" style="background-repeat: no-repeat;
+                background-size: 200% 200%;
+                background-position: center;
+                border-radius: 80%;
+                height: 150px;
+                width: 150px;
+                float: left;
+                padding: 15px;margin-top:-3px;"></a>
+            <h1 style="display: grid;
+             padding: 20px;
+            align-items: center; text-size-adjust: auto;"><b>Kalyani Government Engineering College</b></h1>
+        </div>
+        <div class="top-right" style="padding-top: 20px;">
+            <ul style="list-style: none; margin-left: 240px;">
+                <li><a href="https://www.facebook.com/"><img src="img/facebook_v.jpg"  alt="Facebook logo here" style="background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    border-radius: 60%;
+                    height: 60px;
+                    width: 60px;
+                    float: left;
+                    padding:10px"></a></li>
+                <li><a href="https://twitter.com/"><img src="img/twitter_v.png"  alt="twitter logo here" style="background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    border-radius: 60%;
+                    height: 60px;
+                    width: 60px;
+                    float: left;
+                    padding:10px"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="img/youtube_v.png" alt="youtube logo here" style="background-repeat: no-repeat;
+                    background-size: 50% 50%;
+                    background-position: center;
+                    border-radius: 80%;
+                    height: 60px;
+                    width: 60px;
+                    float: left;
+                    padding:10px"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="img/instagram_v.jpg" alt="INSTAGRAM logo here" style="background-repeat: no-repeat;
+                    background-size: 50% 50%;
+                    background-position: center;
+                    border-radius: 80%;
+                    height: 60px;
+                    width: 60px;
+                    float: left;
+                    padding:10px"></a></li>
+                <li><a href="https://www.linkedin.com/"><img src="img/linkedin_v.png"  alt="linkedin logo here" style="background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    border-radius: 60%;
+                    height: 60px;
+                    width: 60px;
+                    float: left;
+                    padding:10px"></a></li>
+            </ul>
+        </div>
+</div>
+<h1 style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); text-align: center; margin-top: 30px; width: 30%; margin-left: 550px; border-radius:25%">Registration Form</h1>
+<div class="register-form">
+<form>
+    <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+    </div>
+
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+    </div>
+
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+    </div>
+
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Confirm Password" name="psw">
+    </div>
+
+    <button type="submit" class="reg-button">Register</button>
+    <a href="login.html" class="bck-t-login" style="margin-left: 225px;"><p>Already Registered?, Login Here</p></a>
+</form>
+</div>
+</body>
+</html>
